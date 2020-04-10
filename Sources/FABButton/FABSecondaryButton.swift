@@ -24,11 +24,11 @@
 
 import UIKit
 
-protocol FABSecondaryButtonDelegate: class {
+public protocol FABSecondaryButtonDelegate: class {
     func secondaryActionForButton(_ action: FABSecondaryAction)
 }
 
-typealias FABSecondaryAction = () -> ()
+public typealias FABSecondaryAction = () -> ()
 
 class FABSecondaryButton: UIView {
     
