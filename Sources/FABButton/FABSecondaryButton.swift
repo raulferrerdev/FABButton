@@ -82,13 +82,13 @@ class FABSecondaryButton: UIView {
         labelView.backgroundColor = .white
         labelView.translatesAutoresizingMaskIntoConstraints = false
         labelView.layer.cornerRadius = 4
-        labelView.backgroundColor = .darkGray
         dropShadowToView(labelView)
         
         buttonLabel.translatesAutoresizingMaskIntoConstraints = false
         buttonLabel.font = .systemFont(ofSize: 11)
         buttonLabel.textAlignment = .center
         buttonLabel.text = fabSecondary.title
+        buttonLabel.textColor = .gray
         buttonLabel.contentInsets = UIEdgeInsets(top: 0, left: 7, bottom: 0, right: 7)
     }
 
