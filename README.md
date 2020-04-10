@@ -1,3 +1,3 @@
 # FABButton
 
-A description of this package.
+FAB Button project.

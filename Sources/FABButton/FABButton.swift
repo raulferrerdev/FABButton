@@ -1,3 +1,1 @@
-struct FABButton {
-    var text = "Hello, World!"
-}
+struct FABButton {}
