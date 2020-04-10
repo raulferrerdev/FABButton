@@ -22,4 +22,42 @@
 //  Created by RaulF on 10/04/2020.
 //
 
-struct FABButton {}
+import UIKit
+
+class FABMainButton: UIButton {
+
+    override init(frame: CGRect) {
+        super.init(frame: .zero)
+        configure()
+    }
+    
+    
+    init(image: UIImage?) {
+        super.init(frame: .zero)
+        setImage(image, for: .normal)
+        configure()
+    }
+    
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    private func configure() {
+        translatesAutoresizingMaskIntoConstraints = false
+        backgroundColor = UIColor.orange
+        layer.cornerRadius = 25
+        dropButtonShadow()
+    }
+
+    
+    private func dropButtonShadow() {
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        layer.shadowRadius = 5.0
+        layer.shadowOpacity = 0.5
+        layer.cornerRadius = 25.0
+    }
+}
+
