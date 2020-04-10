@@ -30,7 +30,7 @@ public class FABView: UIStackView {
     private var mainButton = FABMainButton(frame: .zero)
     private var isMenuOnScreen: Bool = false
     
-    weak var delegate: FABSecondaryButtonDelegate?
+    weak public var delegate: FABSecondaryButtonDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
