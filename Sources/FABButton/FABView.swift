@@ -39,7 +39,7 @@ public class FABView: UIStackView {
     }
     
     
-    init(buttonImage: UIImage?) {
+    public init(buttonImage: UIImage?) {
         super.init(frame: .zero)
         
         mainButton.setImage(buttonImage, for: .normal)
