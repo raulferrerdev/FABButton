@@ -105,8 +105,8 @@ public extension FABView {
 }
 
 
-public extension FABView: FABSecondaryButtonDelegate {
-    func secondaryActionForButton(_ action: FABSecondaryAction) {
+extension FABView: FABSecondaryButtonDelegate {
+    public func secondaryActionForButton(_ action: FABSecondaryAction) {
         isMenuOnScreen.toggle()
         delegate?.secondaryActionForButton(action)
     }
