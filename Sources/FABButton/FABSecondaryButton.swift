@@ -82,6 +82,7 @@ class FABSecondaryButton: UIView {
         labelView.backgroundColor = .white
         labelView.translatesAutoresizingMaskIntoConstraints = false
         labelView.layer.cornerRadius = 4
+        labelView.backgroundColor = .darkGray
         dropShadowToView(labelView)
         
         buttonLabel.translatesAutoresizingMaskIntoConstraints = false
