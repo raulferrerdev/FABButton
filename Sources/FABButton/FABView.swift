@@ -26,7 +26,7 @@ import UIKit
 
 public class FABView: UIStackView {
     
-    struct Configuration {
+    public struct Configuration {
         var labelFont: UIFont
         var labelFontColor: UIColor
         var labelBackgroundColor: UIColor
