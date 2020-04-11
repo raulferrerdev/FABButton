@@ -5,9 +5,9 @@
 ### Installation
 As FABButton is a SPM (Swift Package Manager) component, should be added from the menu File > Swift Packages > Add Package Dependency...
 
-![](https://drive.google.com/file/d/1Qu-T5O7wTQ_w1i__Ai9MeLEwlCqYv6Q-/view?usp=sharing)
+![image](https://drive.google.com/uc?export=view&id=1Qu-T5O7wTQ_w1i__Ai9MeLEwlCqYv6Q-)
 
-![](https://drive.google.com/file/d/1xNEtkaJNeO8DlL4KVw2EdIg0Q1Zf-yEu/view?usp=sharing)
+![image](https://drive.google.com/uc?export=view&id=1xNEtkaJNeO8DlL4KVw2EdIg0Q1Zf-yEu)
 
 Then we can add in a UIViewController as follows:
 
@@ -67,4 +67,4 @@ extension ViewController: FABSecondaryButtonDelegate {
 }
 ```
 
-![](https://drive.google.com/file/d/1XqpcNJQs-250OgeVy_IQWN383hD_CQVJ/view?usp=sharing)
+![image](https://drive.google.com/uc?export=view&id=1XqpcNJQs-250OgeVy_IQWN383hD_CQVJ)
