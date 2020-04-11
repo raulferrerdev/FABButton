@@ -26,28 +26,16 @@ import UIKit
 
 public class FABView: UIStackView {
     
-    public struct Configuration {
-        var labelFont: UIFont
-        var labelFontColor: UIColor
-        var labelBackgroundColor: UIColor
-        
-        public init(labelFont: UIFont? = .systemFont(ofSize: 11), labelFontColor: UIColor? = .systemGray, lableBackgroundColor: UIColor? = .white) {
-            self.labelFont = labelFont
-            self.labelFontColor = labelFontColor
-            self.labelBackgroundColor = labelBackgroundColor
-        }
-    }
-    
     private let stackView = FABStackView(frame: .zero)
     private var mainButton = FABMainButton(frame: .zero)
     private var isMenuOnScreen: Bool = false
-    
-    public var configuration: Configuration = Configuration()
     
     weak public var delegate: FABSecondaryButtonDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        configure()
     }
     
     
