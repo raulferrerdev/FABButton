@@ -31,10 +31,10 @@ public class FABView: UIStackView {
         var labelFontColor: UIColor
         var labelBackgroundColor: UIColor
         
-        init() {
-            labelFont = .systemFont(ofSize: 11)
-            labelFontColor = .systemGray
-            labelBackgroundColor = .white
+        public init(labelFont: UIFont? = .systemFont(ofSize: 11), labelFontColor: UIColor? = .systemGray, lableBackgroundColor: UIColor? = .white) {
+            self.labelFont = labelFont
+            self.labelFontColor = labelFontColor
+            self.labelBackgroundColor = labelBackgroundColor
         }
     }
     
