@@ -46,7 +46,7 @@ class FABMainButton: UIButton {
     
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
-        backgroundColor = UIColor.orange
+        backgroundColor = UIColor.white
         layer.cornerRadius = 25
         dropButtonShadow()
     }
