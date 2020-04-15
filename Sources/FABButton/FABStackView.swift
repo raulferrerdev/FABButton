@@ -108,9 +108,15 @@ class FABStackView: UIStackView {
     }
     
     
-    func dismissButtons() {
+    func dismissButtonsWithReset(_ reset: Bool) {
         guard let view = secondaryButtons.last else {
-            setSecondaryButtonsArray()
+            if reset {
+                secondaryViews.removeAll()
+                secondaryButtons.removeAll()
+                fabSecondaryButtons.removeAll()
+            } else {
+                setSecondaryButtonsArray()
+            }
             return
         }
         
@@ -120,7 +126,7 @@ class FABStackView: UIStackView {
             view.transform = CGAffineTransform.identity.scaledBy(x: 0.001, y: 0.01)
         }) { finished in
             view.removeFromSuperview()
-            self.dismissButtons()
+            self.dismissButtonsWithReset(reset)
         }
     }
 }
@@ -143,10 +149,7 @@ extension FABStackView {
     
     
     func resetFABButton() {
-        dismissButtons()
-        secondaryViews.removeAll()
-        secondaryButtons.removeAll()
-        fabSecondaryButtons.removeAll()
+        dismissButtonsWithReset(true)
     }
 }
 
@@ -154,7 +157,7 @@ extension FABStackView {
 extension FABStackView: FABSecondaryButtonDelegate {
     func secondaryActionForButton(_ action: FABSecondaryAction) {
         delegate?.secondaryActionForButton(action)
-        dismissButtons()
+        dismissButtonsWithReset(false)
     }
 }
 
