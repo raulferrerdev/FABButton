@@ -30,6 +30,8 @@ public protocol FABSecondaryButtonDelegate: class {
 
 public typealias FABSecondaryAction = () -> ()
 
+typealias FABSecondary = (title: String, image: UIImage, action: () -> ())
+
 class FABSecondaryButton: UIView {
     
     private var secondaryButton = UIButton(frame: .zero)

@@ -24,7 +24,6 @@
 
 import UIKit
 
-typealias FABSecondary = (title: String, image: UIImage, action: () -> ())
 
 class FABStackView: UIStackView {
 
