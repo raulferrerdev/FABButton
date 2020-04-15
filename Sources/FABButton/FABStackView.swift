@@ -143,6 +143,8 @@ extension FABStackView {
     
     
     func resetFABButton() {
+        secondaryViews.removeAll()
+        secondaryButtons.removeAll()
         fabSecondaryButtons.removeAll()
     }
 }
