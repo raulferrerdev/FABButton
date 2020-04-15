@@ -71,6 +71,23 @@ class FABStackView: UIStackView {
             secondaryButtons.append(view)
         }
     }
+}
+
+
+// MARK: - Public methods
+extension FABStackView {
+    func addSecondaryButtonWith(image: UIImage, labelTitle: String, action: @escaping () -> ()) {
+        let component: FABSecondary
+        component.image = image
+        component.title = labelTitle
+        component.action = action
+        fabSecondaryButtons.append(component)
+    }
+    
+    
+    func setFABButton() {
+        configureSecondaryButtons()
+    }
     
     
     func showButtons() {
@@ -127,23 +144,6 @@ class FABStackView: UIStackView {
             view.removeFromSuperview()
             self.dismissButtonsWithReset(reset)
         }
-    }
-}
-
-
-// MARK: - Public methods
-extension FABStackView {
-    func addSecondaryButtonWith(image: UIImage, labelTitle: String, action: @escaping () -> ()) {
-        let component: FABSecondary
-        component.image = image
-        component.title = labelTitle
-        component.action = action
-        fabSecondaryButtons.append(component)
-    }
-    
-    
-    func setFABButton() {
-        configureSecondaryButtons()
     }
     
     
