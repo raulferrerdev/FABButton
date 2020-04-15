@@ -88,7 +88,7 @@ public class FABView: UIStackView {
             
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackView.topAnchor.constraint(equalTo: topAnchor),
-//            stackView.widthAnchor.constraint(equalToConstant: 150)
+            stackView.widthAnchor.constraint(equalToConstant: 150)
         ])
     }
 }
