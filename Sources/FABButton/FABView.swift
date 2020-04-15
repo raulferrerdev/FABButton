@@ -111,4 +111,3 @@ extension FABView: FABSecondaryButtonDelegate {
         delegate?.secondaryActionForButton(action)
     }
 }
-

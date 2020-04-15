@@ -31,14 +31,7 @@ class FABMainButton: UIButton {
         configure()
     }
     
-    
-    init(image: UIImage?) {
-        super.init(frame: .zero)
-        setImage(image, for: .normal)
-        configure()
-    }
-    
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -60,4 +53,3 @@ class FABMainButton: UIButton {
         layer.cornerRadius = 25.0
     }
 }
-
