@@ -112,7 +112,7 @@ public extension FABView {
 
 
 extension FABView: FABSecondaryButtonDelegate {
-    public func secondaryActionForButton(_ action: FABSecondaryAction) {
+    public func secondaryActionForButton(_ action: @escaping () -> ()) {
         isMenuOnScreen.toggle()
         delegate?.secondaryActionForButton(action)
     }

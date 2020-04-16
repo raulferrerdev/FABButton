@@ -25,10 +25,10 @@
 import UIKit
 
 public protocol FABSecondaryButtonDelegate: class {
-    func secondaryActionForButton(_ action: FABSecondaryAction)
+    func secondaryActionForButton(_ action: @escaping () -> ())
 }
 
-public typealias FABSecondaryAction = () -> ()
+//public typealias FABSecondaryAction = () -> ()
 
 typealias FABSecondary = (title: String, image: UIImage, action: () -> ())
 

@@ -152,7 +152,7 @@ extension FABStackView {
 
 
 extension FABStackView: FABSecondaryButtonDelegate {
-    func secondaryActionForButton(_ action: FABSecondaryAction) {
+    func secondaryActionForButton(_ action: @escaping () -> ()) {
         delegate?.secondaryActionForButton(action)
         dismissButtonsWithReset(false)
     }
