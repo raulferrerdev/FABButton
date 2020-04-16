@@ -58,7 +58,6 @@ class FABStackView: UIStackView {
         for secondary in fabSecondaryButtons {
             let secondaryView = FABSecondaryButton(fabSecondary: secondary)
             secondaryView.delegate = self
-            secondaryView.alpha = 0.0
             secondaryViews.append(secondaryView)
         }
         
@@ -106,7 +105,6 @@ extension FABStackView {
             view.heightAnchor.constraint(equalToConstant: 34)
         ])
         
-        view.alpha = 1.0
         view.transform = CGAffineTransform.identity.scaledBy(x: 0.001, y: 0.001)
         UIView.animate(withDuration: 0.075, animations: {
             view.transform = CGAffineTransform.identity.scaledBy(x: 1.1, y: 1.1)
