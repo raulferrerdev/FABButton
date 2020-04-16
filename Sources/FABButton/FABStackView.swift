@@ -137,7 +137,7 @@ extension FABStackView {
         secondaryButtons.removeLast()
         
         UIView.animate(withDuration: 0.075, animations: {
-            view.transform = CGAffineTransform.identity.scaledBy(x: 0.001, y: 0.01)
+            view.transform = CGAffineTransform.identity.scaledBy(x: 0.001, y: 0.001)
         }) { finished in
             view.removeFromSuperview()
             self.dismissButtonsWithReset(reset)
