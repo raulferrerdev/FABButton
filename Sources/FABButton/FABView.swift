@@ -102,12 +102,6 @@ public extension FABView {
     func setFABButton() {
         stackView.setFABButton()
     }
-    
-    
-    func resetFABButton() {
-        stackView.resetFABButton()
-        isMenuOnScreen = false
-    }
 }
 
 
