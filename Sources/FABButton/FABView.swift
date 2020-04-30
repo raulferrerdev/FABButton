@@ -71,7 +71,7 @@ public class FABView: UIStackView {
     
 
     @objc private func mainButtonAction() {
-        isMenuOnScreen ? stackView.dismissButtonsWithReset(false) : stackView.showButtons()
+        isMenuOnScreen ? stackView.dismissButtons() : stackView.showButtons()
         isMenuOnScreen.toggle()
     }
     
